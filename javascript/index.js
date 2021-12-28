@@ -76,7 +76,8 @@ document.getElementById("event2").addEventListener("click", function() {
     logEvent("event2", { member_id: "A00002", phone_number: "0911000002" });
 });
 
-document.getElementById("userprop").addEventListener("click", function() {
-    console.log("userprop");
-    setUserProperty("userprop", "custom_value");
+document.addEventListener("DOMContentLoaded", function(event) {
+    console.log("DOMContentLoaded");
+    logEvent("screen_view", { screen_name: "Web View", screen_class: "MainActivity5" , member_id: "A00003",phone_number: "0911000003" });
+
 });
